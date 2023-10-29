@@ -51,8 +51,7 @@ if (args.length == 0) {
         verbose(`  integrity = ${key.integrity}`);
 
         var utcSeconds = key.time;
-        var createTime = new Date(0); // The 0 there is the key, which sets the date to the epoch
-        createTime.setUTCSeconds(utcSeconds);
+        var createTime = new Date(key.time); // The 0 there is the key, which sets the date to the epoch
 
         verbose(`  time = ${createTime}`);
         let val = await cacache.get(npmCachePath, k);
