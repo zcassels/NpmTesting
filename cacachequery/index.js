@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import cacache from 'cacache';
 import { join } from 'path';
 
@@ -55,7 +57,7 @@ if (args.length == 0) {
 
         verbose(`  time = ${createTime}`);
         let val = await cacache.get(npmCachePath, k);
-        printJson(val.data)
+        printJson(val.data);
     }
 
     process.exit(0);

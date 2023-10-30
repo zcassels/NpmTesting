@@ -1,5 +1,5 @@
 {
-  "name": "cachequery",
+  "name": "cacachequery",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -9,8 +9,11 @@
   },
   "author": "",
   "license": "ISC",
+  "bin": "index.js",
+  "bundleDependencies": [
+    "cacache"
+  ],
   "dependencies": {
-    "@npmcli/arborist": "^7.2.0",
     "cacache": "^18.0.0"
   }
 }

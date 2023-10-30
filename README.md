@@ -38,4 +38,10 @@ jq .name out.json
 
 npm cache clean make-fetch-happen:request-cache:https://registry.npmjs.org/@npmcli%2farborist
 
+npm cache clean make-fetch-happen:request-cache:https://registry.npmjs.org/@npmcli%2farborist
+npm cache verify
+
+
+await cacache.rm.entry(options.cachePath, key, { removeFully: true })
+
 ```
